@@ -15,6 +15,8 @@ from tkinter.simpledialog import askstring
 import sys
 from openpyxl.utils import get_column_letter
 
+os.environ["SDL_AUDIODRIVER"] = "directsound"
+
 # create dictionary of currency codes based on the various (arbitrary) discrepancies I've seen on the API output
 # (update as needed when code is blank in output, can add to list here)
 currency_codes = {
